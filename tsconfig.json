@@ -14,7 +14,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "declaration": true,
-    "typeRoots": ["./dist/index.d.ts"],
+    // "typeRoots": ["./dist/index.d.ts"], nodejs 타입을 못찾아서 주석처리
 
     /* Linting */
     "strict": true,
@@ -22,6 +22,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"]
+  // "references": [{ "path": "./tsconfig.node.json" }] 빌드에러 발생되어 주석처리
 }
